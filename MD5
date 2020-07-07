@@ -1,7 +1,7 @@
-7359da80cc5dfe17662fcebee53d83ee *DESCRIPTION
+90fb651cce522667f2d1a8a11c49cf79 *DESCRIPTION
 f3dd1f4e57a84fcec1da9d65d8e04376 *LICENSE
 9c7fae7d8137a69def0acfd5718391bb *NAMESPACE
-b0ee9f2601531b28ed230d2ac50a9ed4 *NEWS.md
+0b2b35c3ad573bc3733937db88e87fa7 *NEWS.md
 33e9dc56602a492fc4baa6a18c1dda1b *R/calculate_multi_rev_per_session.R
 25167efa3f0bf5f7cd1ee5a0f1f66515 *R/calculate_total_cm.R
 175a1e649a3cf8f392f9c333374fc95e *R/estimate_all_values.R
@@ -10,7 +10,7 @@ e53f23f6334b37f32618fded6293f8ff *R/estimate_lift_vs_baseline.R
 bddbff5d11c8e3349f69499660da9a69 *R/estimate_loss.R
 68fd2e2e8f2981559e75f16cd41c3ed2 *R/estimate_value_remaining.R
 6687b8d0d779eec0196680c66b897ddc *R/estimate_win_prob.R
-1b0885491a2526a884d8eb40eb42c723 *R/estimate_win_prob_given_posterior.R
+59d8e45394aba11a0344343a2c3d31c8 *R/estimate_win_prob_given_posterior.R
 e64ff1cf240a7f336ba82d24569660d8 *R/estimate_win_prob_vs_baseline.R
 167daf37ba935d87edb83c2203f80548 *R/estimate_win_prob_vs_baseline_given_posterior.R
 84d2eb8d673f879503af1da487305710 *R/find_best_option.R
