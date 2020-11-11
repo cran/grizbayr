@@ -1,4 +1,10 @@
+# grizbayr 1.3.1
+
 # News
+
+## 1.3.1
+
+- Bugfix in sample_total_cm distribution where the CM distribution is no longer incorrectly bimodal.
 
 ## 1.3.0
 

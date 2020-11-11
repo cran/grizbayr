@@ -1,14 +1,14 @@
-## ---- include = FALSE----------------------------------------------------
+## ---- include = FALSE---------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 
-## ----setup, warning=FALSE, message=FALSE---------------------------------
+## ----setup, warning=FALSE, message=FALSE--------------------------------------
 library(grizbayr)
 library(dplyr)
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 raw_data_long_format <- tibble::tribble(
    ~option_name, ~clicks, ~conversions,
             "A",       6,           3,
@@ -30,7 +30,7 @@ raw_data_long_format %>%
   dplyr::summarise(sum_clicks = sum(clicks), 
                    sum_conversions = sum(conversions))
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 # Since this is a stochastic process with a random number generator,
 # it is worth setting the seed to get consistent results.
 set.seed(1776)
@@ -42,31 +42,31 @@ input_df <- tibble::tibble(
 )
 input_df
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 estimate_all_values(input_df, distribution = "conversion_rate", wrt_option_lift = "A")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 estimate_win_prob(input_df, distribution = "conversion_rate")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 estimate_value_remaining(input_df, distribution = "conversion_rate")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 estimate_value_remaining(input_df, distribution = "conversion_rate", metric = "absolute")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 estimate_lift_vs_baseline(input_df, distribution = "conversion_rate", wrt_option = "A")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 estimate_lift_vs_baseline(input_df, distribution = "conversion_rate", wrt_option = "A", metric = "absolute")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 estimate_win_prob_vs_baseline(input_df, distribution = "conversion_rate", wrt_option = "A")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 sample_from_posterior(input_df, distribution = "conversion_rate")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 (input_df_rps <- tibble::tibble(
    option_name = c("A", "B", "C"),
    sum_sessions = c(1000, 1000, 1000),
@@ -76,12 +76,12 @@ sample_from_posterior(input_df, distribution = "conversion_rate")
 
 estimate_all_values(input_df_rps, distribution = "rev_per_session", wrt_option_lift = "A")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 # You can also pass priors for just the Beta distribution and not the Gamma distribution.
 new_priors <- list(alpha0 = 2, beta0 = 10, k0 = 3, theta0 = 10000)
 estimate_all_values(input_df_rps, distribution = "rev_per_session", wrt_option_lift = "A", priors = new_priors)
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 (input_df_all <- tibble::tibble(
    option_name = c("A", "B", "C"),
    sum_impressions = c(10000, 9000, 11000),
