@@ -1,7 +1,7 @@
-a293a709760ecb252523e940e4ad3a5a *DESCRIPTION
+5cf0ebad365287887076cf2c9a3b63c8 *DESCRIPTION
 f3dd1f4e57a84fcec1da9d65d8e04376 *LICENSE
 9c7fae7d8137a69def0acfd5718391bb *NAMESPACE
-fa263cda36c093fba9e11ee765803c19 *NEWS.md
+5797e1299b41cf8d6971779fae5c0a1e *NEWS.md
 33e9dc56602a492fc4baa6a18c1dda1b *R/calculate_multi_rev_per_session.R
 25167efa3f0bf5f7cd1ee5a0f1f66515 *R/calculate_total_cm.R
 4b900ffe1b8611fadeea63f79a89e484 *R/estimate_all_values.R
@@ -18,7 +18,7 @@ e68884be0355bb5e64fdb24cb38da05c *R/find_best_option.R
 d8e5ff352f692cf1176c9b04575a6656 *R/impute_missing_options.R
 09c9186da6ad4ec30824cb8bfcd3947a *R/is_prior_valid.R
 f1fbc3bfc821fa41a3a165706bb591fa *R/is_winner_max.R
-09bbab68007ca0c326e399d647ea78bd *R/rdirichlet.R
+e9002c5c73c6db11ffdda4401da2a5fb *R/rdirichlet.R
 2631038d413face6ad076d7ebc1ab4a8 *R/sample_cm_per_click.R
 12c69a4a865481f554386084e59f1c6a *R/sample_conv_rate.R
 94e908e89258c0f73c5729c7ab22578e *R/sample_cpa.R
@@ -29,8 +29,9 @@ e5a052c281290dcc16511c2a64b6ff94 *R/sample_ctr.R
 da5bab53e77f34ef35b279b708863a52 *R/sample_page_views_per_session.R
 39b7e974950c726dfec72d17755a5f7e *R/sample_response_rate.R
 c9dfc6e6a647c93428aea3428d6e0154 *R/sample_rev_per_session.R
-8857137c4aefc50ee6e1ea7d175e6ecb *R/sample_session_duration.R
+bfbb76e2d938479bc099ac763c0faac1 *R/sample_session_duration.R
 9bdafeb4faffbc1d0b53799553499a97 *R/sample_total_cm.R
+666c9d5b231fb590bf844d54987f1471 *R/sysdata.R
 f2d377a87d01508c78ab01acd1e2141c *R/sysdata.rda
 0dc14c6d6291c1ca777ef613a1f32ee5 *R/update_beta.R
 de2fcda8e273524fdfe22f16523eda43 *R/update_dirichlet.R
@@ -42,13 +43,14 @@ b593ab248a8347848935fa64371faf90 *R/validate_input_column.R
 89ab0f945e355d10b0d67f8bc5e4ebe3 *R/validate_priors.R
 d5a41a6912da6644f47c4ba328f08cde *R/validate_wrt_option.R
 fd6204872f6f56e9b604961824421d05 *README.md
-6243b2d5daf581145515a5ec92c792ee *build/vignette.rds
-55f454a86710a1d580390e8e845103f3 *inst/WORDLIST
+a233cbaf2128c8f0430373f8b4479582 *build/vignette.rds
+9a1f0c5c91d0a38bc06a933b8d9cb8da *inst/WORDLIST
 95178cb518ad7eb179ae3809635e1b9d *inst/doc/intro.R
 6c5127b5f5c1d24ec7e634856ef29b54 *inst/doc/intro.Rmd
-ecb9f806f4f2f93207aa3d83a5f2823a *inst/doc/intro.html
+eac4192c17a986c99b72bfd18488cfb7 *inst/doc/intro.html
 5840dbfbc5491059968ec20ab037d80b *man/calculate_multi_rev_per_session.Rd
 c5ea0d196b50d2fc898c71bfcee8b6fb *man/calculate_total_cm.Rd
+501791441c7decd035a83e05168573d0 *man/distribution_column_mapping.Rd
 76676e16581bec1cb52d985303edb3a5 *man/estimate_all_values.Rd
 dc167f3220e3ffa3b10ef1e5297e08e6 *man/estimate_lift.Rd
 837dc286ffa6d76db4ad8ea5a9597071 *man/estimate_lift_vs_baseline.Rd
@@ -63,7 +65,7 @@ c1486056deb789b24024092956c7e3f0 *man/grizbayr.Rd
 60ec7f218ca9c8ecb2781e539a8a52c1 *man/impute_missing_options.Rd
 02676f524dba98559e9074a942d05ba2 *man/is_prior_valid.Rd
 fef1a8db7fb0c70c59404bc5b52b51d0 *man/is_winner_max.Rd
-7062c5b06463dde534be2a5f304b583b *man/rdirichlet.Rd
+c8d7b98d446cd3a14ea98c8eaf499d43 *man/rdirichlet.Rd
 48ec425a0a11145e7d4086583f990388 *man/sample_cm_per_click.Rd
 c9991b5912d7f2ab1f0023d7f5e8c6f7 *man/sample_conv_rate.Rd
 5ef7e5f289499609a1f2c1f6c8422036 *man/sample_cpa.Rd
@@ -74,7 +76,7 @@ f54d443cdf8715ee77b176898eb46d37 *man/sample_ctr.Rd
 c9ba17109e1a2f96ae5aa76cc48a9bba *man/sample_page_views_per_session.Rd
 c3285b77f2aaa1700f6d432ff11c8f3c *man/sample_response_rate.Rd
 fdd65226b6f5e36e732181e1296e8c90 *man/sample_rev_per_session.Rd
-2e503d6541d809ddbdd44e3a51bf81bb *man/sample_session_duration.Rd
+44624236f46edf387507937afe1f8908 *man/sample_session_duration.Rd
 30a7372dbf308f369d7031ddaa9769a8 *man/sample_total_cm.Rd
 f255cc11e071cffaaaba9fd455cc9ed3 *man/update_beta.Rd
 7433d7a137a7a3090d6e2373861c09a8 *man/update_dirichlet.Rd
