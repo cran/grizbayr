@@ -1,7 +1,7 @@
-5cf0ebad365287887076cf2c9a3b63c8 *DESCRIPTION
+af69fe3121fb8cefe247fbe3081ca59d *DESCRIPTION
 f3dd1f4e57a84fcec1da9d65d8e04376 *LICENSE
 9c7fae7d8137a69def0acfd5718391bb *NAMESPACE
-5797e1299b41cf8d6971779fae5c0a1e *NEWS.md
+e5cf961df6cfcdcb8bd7d776040f7d98 *NEWS.md
 33e9dc56602a492fc4baa6a18c1dda1b *R/calculate_multi_rev_per_session.R
 25167efa3f0bf5f7cd1ee5a0f1f66515 *R/calculate_total_cm.R
 4b900ffe1b8611fadeea63f79a89e484 *R/estimate_all_values.R
@@ -42,12 +42,12 @@ b593ab248a8347848935fa64371faf90 *R/validate_input_column.R
 960b63892e6b0785a872a54adf586465 *R/validate_posterior_samples.R
 89ab0f945e355d10b0d67f8bc5e4ebe3 *R/validate_priors.R
 d5a41a6912da6644f47c4ba328f08cde *R/validate_wrt_option.R
-fd6204872f6f56e9b604961824421d05 *README.md
-a233cbaf2128c8f0430373f8b4479582 *build/vignette.rds
+8e38a5c9e94a97682f33fda6c77aff55 *README.md
+545ac83345520c2a34782a066f154570 *build/vignette.rds
 9a1f0c5c91d0a38bc06a933b8d9cb8da *inst/WORDLIST
 95178cb518ad7eb179ae3809635e1b9d *inst/doc/intro.R
 6c5127b5f5c1d24ec7e634856ef29b54 *inst/doc/intro.Rmd
-eac4192c17a986c99b72bfd18488cfb7 *inst/doc/intro.html
+523afacb9d1e0a5fe72570951cd315f3 *inst/doc/intro.html
 5840dbfbc5491059968ec20ab037d80b *man/calculate_multi_rev_per_session.Rd
 c5ea0d196b50d2fc898c71bfcee8b6fb *man/calculate_total_cm.Rd
 501791441c7decd035a83e05168573d0 *man/distribution_column_mapping.Rd
@@ -110,7 +110,7 @@ e57acf868a31efadd170b05cce51e292 *tests/testthat/test-sample_conv_rate.R
 a36a068ea581ee465dc882fd2c8e559b *tests/testthat/test-sample_cpa.R
 b62262cb73833a6e846a342c960e7cbc *tests/testthat/test-sample_cpc.R
 c29db95c8b57dbe6b19ee2ff038d6407 *tests/testthat/test-sample_ctr.R
-0a5371c7019faf47213eb164f50008a7 *tests/testthat/test-sample_from_posterior.R
+2638be1210099103d6bc05cad99430b5 *tests/testthat/test-sample_from_posterior.R
 b474874907d6004c51ebbd0bc0ee8d47 *tests/testthat/test-sample_multi_rev_per_session.R
 97cd55e0106e148182b3bb8babbe0af4 *tests/testthat/test-sample_page_views_per_session.R
 a5071ac43474f22152e55d09e0e34431 *tests/testthat/test-sample_response_rate.R
